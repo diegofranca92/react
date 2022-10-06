@@ -2,7 +2,10 @@
   "name": "react-release-script",
   "version": "0.0.0",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.1.0",
@@ -15,6 +18,8 @@
     "log-update": "^2.1.0",
     "prompt-promise": "^1.0.3",
     "request-promise-json": "^1.0.4",
-    "semver": "^5.4.1"
-  }
+    "semver": "^5.4.1",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
